@@ -1,0 +1,118 @@
+Handle,REF,Nombre,Categoria,Precio [tacosaragon-avenidamanuel],ITEM_ID,ITEM_ID,VARIANT_ID
+agua,10036,Agua,Bebidas,0,d36b9bdd-9b3c-4101-9e8b-9623c9a62ee0,d36b9bdd-9b3c-4101-9e8b-9623c9a62ee0,370845d7-f0f0-4cc6-990b-79db72efcfa5
+agua-litro,10005,Agua cebada Litro,Bebidas,29,877e394e-1fb1-40b9-a246-b8b5b82d098f,877e394e-1fb1-40b9-a246-b8b5b82d098f,520e60e1-cf7e-496e-b9c0-f8fdc0ac4a6f
+agua-medio,10006,Agua cebada medio,Bebidas,20,d2ba0920-38b5-44ba-8a36-8ddd7ddd8a53,d2ba0920-38b5-44ba-8a36-8ddd7ddd8a53,6bf966e3-35be-4495-be55-d442109c097d
+horchata-de-coco-litro,10082,Agua Horchata Litro,Bebidas,29,25366adb-49ce-44ba-9a5b-de9b46a17380,25366adb-49ce-44ba-9a5b-de9b46a17380,7d054829-d1e3-4c7f-8442-5f62df5ede0c
+horchata-medio,10097,Agua Horchata Medio,Bebidas,20,ba78c566-b342-4f0f-876a-3c99f041f13f,ba78c566-b342-4f0f-876a-3c99f041f13f,6083e819-0c0d-48f9-9cd8-943fb47393b2
+agua-jamaica-litro,10024,Agua Jamaica litro,Bebidas,29,96ee8feb-1fa0-455a-8948-1d020cca9ea9,96ee8feb-1fa0-455a-8948-1d020cca9ea9,8d7e43bd-3a42-471e-bc69-e26fab2740d1
+agua-jamaica-medio,10025,Agua Jamaica medio,Bebidas,20,5511e70c-1eea-45b8-85f3-c05c33453eca,5511e70c-1eea-45b8-85f3-c05c33453eca,88d5993a-32f9-428f-aa83-1b5ef163ddcf
+aluminio,10044,aluminio,,variable,c21a3ad8-3416-48ec-8086-cc222001baae,c21a3ad8-3416-48ec-8086-cc222001baae,4f5241e4-7dd1-4d5b-b67a-0b7032675e80
+pick,10075,Cambio,,variable,9bf3cb48-f0db-48e2-9ae7-ebf1ac7f43cd,9bf3cb48-f0db-48e2-9ae7-ebf1ac7f43cd,b7d39a63-d5dc-453b-9451-f845288c589b
+carne-de-res,10032,carne de res,,variable,3fec24c2-b2ae-49a3-b6a1-0752222d02b5,3fec24c2-b2ae-49a3-b6a1-0752222d02b5,364958fd-e29d-4331-b4eb-b742d7d4737a
+cebada,10042,cebada,,variable,2d6ad032-9a7d-4781-9e02-e2f1f30bc8a2,2d6ad032-9a7d-4781-9e02-e2f1f30bc8a2,6fdce502-a62d-4dbf-8f3c-2e583d91183b
+cebolla-blanca,10041,Cebolla Blanca,,variable,3d586f81-c5c4-4b7d-943a-02cb34dc34ac,3d586f81-c5c4-4b7d-943a-02cb34dc34ac,6d25660a-2dcf-4d2a-bcf0-d128486ec2c2
+cebolla-morada,10037,cebolla morada,,variable,b41c9e41-61dc-4604-9118-88bc56766861,b41c9e41-61dc-4604-9118-88bc56766861,a687de78-28b2-4eda-ba02-f6331549b0ea
+chile-habanero,10040,Chile Habanero,,variable,3b3a7c2f-0149-4d5f-9459-d44ce7deac6a,3b3a7c2f-0149-4d5f-9459-d44ce7deac6a,6b36a29f-eac4-44e0-aaa3-24a6bedf841e
+chile-jalapeño,10038,Chile Jalapeño,,variable,2253f37a-8e81-4154-b687-bd4de91bb7b4,2253f37a-8e81-4154-b687-bd4de91bb7b4,3b3bb148-096d-401b-8bc0-de14424695fa
+coca-cola-zero,10052,Coca Cola Zero,,variable,452fa4ce-e1de-47dc-8319-da0575bbfd13,452fa4ce-e1de-47dc-8319-da0575bbfd13,7636cd96-e8d4-46b4-82c1-2de7aae5bbdb
+coca-cola-sin-azúcar,10100,Coca-Cola sin azúcar,Bebidas,35,bc93574e-04a0-4169-afea-b1e6036688b3,bc93574e-04a0-4169-afea-b1e6036688b3,7009145b-e825-4a79-8c8b-dd823e0bb446
+coca-600,10008,CocaCola,Bebidas,35,965d6362-82c7-416e-b7a6-7652a46bcc8f,965d6362-82c7-416e-b7a6-7652a46bcc8f,34e5bef1-2df9-4e99-b21e-04a20cb64017
+combo-octubre,10049,Combo del amor,Alimentos,89,37b8b1d3-17ed-41c6-9603-5565e08f8fe1,37b8b1d3-17ed-41c6-9603-5565e08f8fe1,8e15f1b9-8964-41b6-abb9-92c3fa34fb20
+combo-del-mes-1,10071,combo del mes,Alimentos,109,5b52950c-e4e4-40c1-a3b0-d82f724af5b1,5b52950c-e4e4-40c1-a3b0-d82f724af5b1,fcd649e8-9c89-493a-ab6c-cced220ff87b
+combo-familiar,10068,Combo familiar,Alimentos,319,4e969bad-c42c-4a60-b540-4e943049c6c1,4e969bad-c42c-4a60-b540-4e943049c6c1,db2bd922-3a69-4a7a-8ebf-2b19dfbf2f77
+combo-finde,10057,Combo finde,Alimentos,119,5c91ba95-9f57-46bb-92c1-e663f0700300,5c91ba95-9f57-46bb-92c1-e663f0700300,37b26b6d-a883-41fb-ac6d-676400c915e2
+combo-harinita,10058,Combo harinita,Alimentos,99,19d74465-4fd7-4cb7-9b8a-b7e146a7e296,19d74465-4fd7-4cb7-9b8a-b7e146a7e296,86a21b91-00b1-4dc4-a404-1d2a02333fad
+combo-jueves,10056,Combo jueves,Alimentos,109,92abef76-f3d0-4687-895b-363091f7aea3,92abef76-f3d0-4687-895b-363091f7aea3,4660aded-b525-4178-9f2d-2730092bf966
+combo-martes,10107,Combo miércoles,Alimentos,109,28a69f62-07d4-4bba-993e-4a687917035f,28a69f62-07d4-4bba-993e-4a687917035f,6cf330f9-54a0-4ac9-843d-35f2ee388471
+combo-mini,10162,Combo mini,Alimentos,89,d3cca0ef-7060-45ca-a408-1de09d22fbab,d3cca0ef-7060-45ca-a408-1de09d22fbab,72ac4122-bf23-4c6f-a047-6a6f1199fc88
+combo-pequeñín,10053,Combo pequeñín,Alimentos,79,e26cc121-2921-4c0b-92a3-5a82b29f075f,e26cc121-2921-4c0b-92a3-5a82b29f075f,3265cebf-af46-491d-a629-759b285828d1
+combo-taculichin,10055,Combo Taculichin,Alimentos,69,769c7e6f-ef89-431f-8ae3-a2e4b0b309ad,769c7e6f-ef89-431f-8ae3-a2e4b0b309ad,8184f83b-2165-49da-b197-0692084ae8f4
+combo-taquitos,10177,Combo taquitos,Alimentos,69,879ec53c-bbc5-45c3-b470-4b4dcd544c2b,879ec53c-bbc5-45c3-b470-4b4dcd544c2b,40acfe14-bfa3-472c-9915-18ef402c621d
+domicilio,10002,Domicilio,,variable,f9a07f95-c2e6-4395-8f77-9627cc7373ae,f9a07f95-c2e6-4395-8f77-9627cc7373ae,dd765543-bb5e-4cc5-af50-54d9d5a5b389
+domicilio-1,10010,Domicilio 1,,15,8a9d65ca-6d28-4984-9257-2cde81a1e350,8a9d65ca-6d28-4984-9257-2cde81a1e350,17417bf9-01a1-4037-91ed-cbbe4002cf8d
+domicilio-0,10175,Domicilio 10,,10,8e095f8b-6b8b-478c-b55e-a9c099c5efe3,8e095f8b-6b8b-478c-b55e-a9c099c5efe3,fbfaf445-94fa-48ca-8ef1-873f9e2066f2
+domicilio-2,10011,Domicilio 2,,20,13f55b59-3301-414b-8902-c86fa238ddcf,13f55b59-3301-414b-8902-c86fa238ddcf,90803063-e03e-41a8-9dac-bbc36861359b
+domicilio-4,10101,Domicilio 3,,25,c0133f64-3c36-474d-8da2-415a042b6625,c0133f64-3c36-474d-8da2-415a042b6625,de27a639-da6b-4957-8dc1-13d49609e048
+domicilio-3,10050,Domicilio 4,Dom con tarjeta,30,2691479d-8d8d-44c2-957b-61a24c7ea5d0,2691479d-8d8d-44c2-957b-61a24c7ea5d0,aeba87fd-c949-4dd9-9064-5f45aa3eac11
+domicilio-5,10102,Domicilio 5,,35,e2df97cf-3ffc-4ab8-a2bf-16a84b4d1509,e2df97cf-3ffc-4ab8-a2bf-16a84b4d1509,4b0e2204-4afa-43fb-8cf6-a2b1e3163b4c
+extra,10120,Extra,Alimentos,0,67846773-61d4-4d54-8ae8-b8b1a59d0f63,67846773-61d4-4d54-8ae8-b8b1a59d0f63,f997c3d0-38b5-4a9a-b8a1-f611a09457fe
+extra-cebolla,10048,Extra Cebollita,Alimentos,0,a894039b-4ee6-4a77-a155-7b1a9d18f8ae,a894039b-4ee6-4a77-a155-7b1a9d18f8ae,d71c16bb-482e-4f1a-a58a-18953b9e3bba
+extra-de-jugo-de-tomate,10178,Extra de jugo de tomate,Alimentos,0,9348a706-ee42-4aa8-978e-ca1ca6c7c558,9348a706-ee42-4aa8-978e-ca1ca6c7c558,46949f72-e09c-428d-9d6d-5fbd9d7ddcb5
+extra-de-verdura,10066,Extra de verdura,Alimentos,0,2234fec1-05e1-43f0-a7f9-81bb26637ec8,2234fec1-05e1-43f0-a7f9-81bb26637ec8,e223b9ff-8c48-49dc-8e92-285a1e3f72b5
+extra-guacamole,10046,Extra guacamole,Alimentos,0,455d6d2f-f7c0-4250-aefa-8947d23c14d0,455d6d2f-f7c0-4250-aefa-8947d23c14d0,e5a443a9-4801-4df4-a3df-67cdc4a823ac
+extra-salsa,10047,Extra salsa tatemada,Alimentos,0,26216832-41b9-47f7-aacc-34fc3562857f,26216832-41b9-47f7-aacc-34fc3562857f,95909287-6fe9-4110-bef3-77361acbedcb
+galleta-costco,10116,Galleta costco,Costco,15,8fe9a4a6-67eb-4e38-bc5f-5fbe1d8f4529,8fe9a4a6-67eb-4e38-bc5f-5fbe1d8f4529,a8329221-9d3a-48e9-9df0-afb92bbd2630
+jaztea-500-ml.,10174,Jaztea 500 ML.,Bebidas,20,d50a9679-85c3-497e-9f8c-399006fe25f1,d50a9679-85c3-497e-9f8c-399006fe25f1,eb971278-ba33-4334-acbc-e240821e2a58
+kilo-de-adobada,10096,Kilo de adobada,Alimentos,600,15308432-9205-406a-8be0-1903c8ad8f5e,15308432-9205-406a-8be0-1903c8ad8f5e,095f8a2b-ebda-4a47-9f02-30475c6a1d97
+kilo-de-carne,10123,Kilo de asada,Alimentos,650,14758d5a-9486-4e35-a70c-e8191687e7e1,14758d5a-9486-4e35-a70c-e8191687e7e1,a15a1187-6b4b-4f2f-aa4d-2118d80e084b
+kilo-de-ubre,10099,Kilo de ubre,Alimentos,500,39b94af8-d13d-44d5-91dc-611c38993f52,39b94af8-d13d-44d5-91dc-611c38993f52,902dbee9-c1d1-4460-8c7b-2543db5b9315
+kit-kat,10124,Kit kat,Costco,18,ff57e3d4-6868-4940-aa42-08b32dea2cd3,ff57e3d4-6868-4940-aa42-08b32dea2cd3,7e5675c8-a148-4c87-8301-efc41edb1be3
+lechuga,10034,Lechuga,,variable,c5bc6ef4-e383-49b7-ad59-79c0bb970b68,c5bc6ef4-e383-49b7-ad59-79c0bb970b68,6ad91ffb-a318-4609-ab43-e383612e1408
+limon,10043,Limon,,variable,8d9548b4-432b-4a06-a994-b88b673d6d33,8d9548b4-432b-4a06-a994-b88b673d6d33,b1a848e6-94e8-428f-885f-4dd62d5e79e7
+lucas-variedad,10166,Lucas variedad,Costco,10,1ebec187-457c-45d3-811c-ecc37548f144,1ebec187-457c-45d3-811c-ecc37548f144,915685cc-d4a3-471f-be46-ffa574cc44b9
+m&m,10141,M&M,Costco,20,9b78c3b2-ab51-4073-b645-453ca6f444cb,9b78c3b2-ab51-4073-b645-453ca6f444cb,a7910b9e-3838-4589-a1ca-9c55a592da5f
+mazapan,10127,Mazapan,Costco,10,f6fc4429-6253-4787-905d-4d43b6b892ed,f6fc4429-6253-4787-905d-4d43b6b892ed,efc7bf0c-ce2a-43ae-9f56-3d819fe0e8d9
+muibon,10151,Muibon,Costco,10,498abd94-e7f8-4bcb-b31f-e45858df32e2,498abd94-e7f8-4bcb-b31f-e45858df32e2,1dd4b903-8f4f-477c-b9c1-635e4183697a
+orden,10009,Orden,Alimentos,variable,c92aad79-68c4-4b98-a6a6-ed4adc5c0106,c92aad79-68c4-4b98-a6a6-ed4adc5c0106,64498a3c-0171-4ed3-abdd-27731e66dff9
+pay-de-limón,10067,Pay de limón,Costco,35,ff1e2b79-e5e2-484d-bba8-6c9a37edd471,ff1e2b79-e5e2-484d-bba8-6c9a37edd471,cd831b86-dae7-4ccf-891d-e51b298866fc
+pellizcada-sencilla,10027,Pellizcada solita,Alimentos,35,7f8fb917-f3af-48ba-bf2a-2e4dc59d3fdc,7f8fb917-f3af-48ba-bf2a-2e4dc59d3fdc,6e409057-3f0d-40c1-8cf5-7320dc7399d4
+pepino,10039,Pepino,,variable,88f63617-fadb-407b-bac7-7d4878f69ec3,88f63617-fadb-407b-bac7-7d4878f69ec3,8628d57b-3498-4892-b7ad-98f34464ff0b
+planchada-de-adobada,10062,Planchada de adobada,Alimentos,80,af7b1136-d0a4-419e-967f-e6bd0a3211fb,af7b1136-d0a4-419e-967f-e6bd0a3211fb,b9f6a530-d427-408c-8b5f-4905840579a3
+quesadilla-de-maiz,10003,Planchada de asada,Alimentos,85,de6f1b9f-74eb-4758-af3e-72c4c66a4c3e,de6f1b9f-74eb-4758-af3e-72c4c66a4c3e,cf9896cc-f05c-4d4b-af02-125ccb1e5ab2
+planchada-de-harina,10051,Planchada de harina,Alimentos,160,c2f04410-0b58-4e05-8e7d-2aa68c7b6ad3,c2f04410-0b58-4e05-8e7d-2aa68c7b6ad3,cdf960c0-13a1-48cd-8ba1-2c387a832b2f
+quesadilla-maíz-tripa-1,10019,Planchada de tripa,Alimentos,90,80dce664-67d1-44cd-ae39-e9c8973a6ad8,80dce664-67d1-44cd-ae39-e9c8973a6ad8,e54168a9-203a-4748-88a2-6904d5acc205
+quesadilla-maíz-ubre,10017,Planchada de Ubre,Alimentos,90,cbcb64e4-b1c6-4444-8dc3-fd99b69a6223,cbcb64e4-b1c6-4444-8dc3-fd99b69a6223,1d533d4e-700e-4c81-98c4-57b69f9c81d3
+quesadilla-maíz-revuelta,10023,Planchada revuelta,Alimentos,80,8c94def5-4ac1-473e-b5aa-e373d0990ffa,8c94def5-4ac1-473e-b5aa-e373d0990ffa,a05d81ad-236b-4fcc-8437-238dc1c132f7
+planchadita-de-adobada,10030,Planchadita de adobada,Alimentos,35,e418ba88-ef96-43e5-a0d4-ee8ffc7f527b,e418ba88-ef96-43e5-a0d4-ee8ffc7f527b,31074276-de0d-47b5-8e07-c821414ece93
+porción-de-adobada,10164,Porción de adobada,Alimentos,30,5dd54327-42ee-46df-b368-a008415cef8e,5dd54327-42ee-46df-b368-a008415cef8e,46c87668-1a23-432e-992a-43e613b8ca45
+porción-de-asada,10163,Porción de asada,Alimentos,33,c25c0a8d-b8bf-46ae-a49e-a3f705ea7572,c25c0a8d-b8bf-46ae-a49e-a3f705ea7572,8eaab179-354d-4a26-b0b6-e10037197048
+porción-de-tripa,10078,Porción de Tripa,Alimentos,40,acdda95f-a621-4af2-96be-51da6b2cd890,acdda95f-a621-4af2-96be-51da6b2cd890,1b18b6d8-48b7-4e1a-881a-7cc6903a3f9b
+porción-ubre,10106,Porción de ubre,Alimentos,40,a9c24b47-d33d-4f8f-9817-74b3c26f9996,a9c24b47-d33d-4f8f-9817-74b3c26f9996,5abba383-c345-4a7e-b36e-4011a0d15a40
+quesadilla-de-adobada,10060,Quesadilla de adobada,Alimentos,80,9ca95e59-3bf7-4d23-9960-a82113791c56,9ca95e59-3bf7-4d23-9960-a82113791c56,314e3045-4f0b-4fc9-90a5-72d291e1b4a8
+quesadilla-harina,10001,Quesadilla harina asada,Alimentos,85,60aa6c99-6a4a-4ae7-b24e-4aea4a8ccf5c,60aa6c99-6a4a-4ae7-b24e-4aea4a8ccf5c,9b346be2-b9c3-4014-9cf8-6316f3aca4f8
+quesadilla-revuelta,10022,Quesadilla harina revuelta,Alimentos,85,03a0acdf-880e-4808-9379-67679f752184,03a0acdf-880e-4808-9379-67679f752184,c1839346-142a-4708-84f2-8e7fb2761ce0
+quesadilla-tripa,10015,Quesadilla harina tripa,Alimentos,90,4066177c-6ecf-4e65-be92-ebad65cecdf7,4066177c-6ecf-4e65-be92-ebad65cecdf7,be4936ac-1297-4ee8-85bf-44d17dcb41c8
+quesadilla-de-ubre,10016,Quesadilla harina ubre,Alimentos,90,a8f2c3d9-bc56-4be8-bfd0-9e786f8d67bd,a8f2c3d9-bc56-4be8-bfd0-9e786f8d67bd,9f4902be-6c24-4ea2-9556-0e559f3f51af
+quesadilla-sencilla,10021,Quesadilla sencilla,Alimentos,30,60bd8baa-12df-4aaf-b947-5388075a44f2,60bd8baa-12df-4aaf-b947-5388075a44f2,fb5ed284-ab4c-46a3-8a9a-e64c94c1bd7f
+quesadillita-de-adobadita,10114,Quesadillita de adobadita,Alimentos,42,73b0d0ed-4b4b-4ea9-98b1-85ae817b27ea,73b0d0ed-4b4b-4ea9-98b1-85ae817b27ea,35b5b09e-7f1a-4fc7-9c57-8b6c0f4c2ee8
+quesadillita-de-carne-asada,10077,Quesadillita de asada,Alimentos,50,38feb4ab-6ac4-499f-aead-80bba1f58cb5,38feb4ab-6ac4-499f-aead-80bba1f58cb5,13d72d58-60db-43d3-b25b-5fb114633702
+quesadillita-de-asadita,10113,Quesadillita de asadita,Alimentos,45,87e68554-1edb-4f91-a2ec-f5ecdc94aa00,87e68554-1edb-4f91-a2ec-f5ecdc94aa00,3fe0dc5f-cd64-4781-9f5f-a5f2eb79f5b3
+quesadillita-de-ubre,10103,Quesadillita de ubre,Alimentos,45,776d616e-31db-481e-a734-717085d55687,776d616e-31db-481e-a734-717085d55687,c7253247-c172-433a-bc07-4f4c84a4a510
+rabano,10035,Rabano,,variable,b132acc8-19ea-4620-b435-d619cb93fb3f,b132acc8-19ea-4620-b435-d619cb93fb3f,7dd86b60-0bb7-4d1f-9bc2-81506b221334
+rebanada-chocoflan,10117,Rebanada chocoflan,Costco,35,cd292c85-8810-4441-a844-543edad22bde,cd292c85-8810-4441-a844-543edad22bde,10d814ed-a9d9-4120-8748-1f9f5f9200f1
+relleno-agua-litro,10028,Relleno agua litro,Bebidas,12,9d8561db-c692-4b5b-bcad-0e23b6309795,9d8561db-c692-4b5b-bcad-0e23b6309795,36e149c1-691c-435c-ba77-18303c94e2dd
+relleno-agua-medio,10029,Relleno agua medio,Bebidas,10,9f532b94-7751-4662-8b8a-8eaa656ecdb6,9f532b94-7751-4662-8b8a-8eaa656ecdb6,5bdec7e0-f7a6-4f41-978d-44e73a6e1edd
+snikers,10059,Snickers,Costco,16,781f5ba1-3462-43dd-9f63-2dcc876e123d,781f5ba1-3462-43dd-9f63-2dcc876e123d,808bdd3a-f074-455e-ba12-56fd76e0608d
+pellizcada-de-adobada,10063,Suprema de adobada,Alimentos,80,f523e74f-3f81-452c-87bb-a97d7e6be619,f523e74f-3f81-452c-87bb-a97d7e6be619,cab967f4-47ab-4b2d-bb11-e57bef2950c4
+pellizcada,10004,Suprema de asada,Alimentos,85,9e8c0e50-1c3e-44fd-99bd-b4e3aa03f919,9e8c0e50-1c3e-44fd-99bd-b4e3aa03f919,7b0f5a7c-f4ad-4e7b-b72e-723ff3c0d24d
+pellizcada-tripa,10020,Suprema de Tripa,Alimentos,90,7fec7d4a-b69e-4dac-8c9a-ab63a9bac87a,7fec7d4a-b69e-4dac-8c9a-ab63a9bac87a,b64cb3f1-5488-4c80-b3c7-6698bf5abf09
+pellizcada-ubre,10018,Suprema de Ubre,Alimentos,90,a17832c5-b079-405d-be82-0fb9a13bf33c,a17832c5-b079-405d-be82-0fb9a13bf33c,6b946229-9683-4591-a37e-fb255865a279
+pellizcada-revuelta,10026,Suprema revuelta,Alimentos,80,e6f44b56-ea9b-444e-b1bd-c55d3508a0dc,e6f44b56-ea9b-444e-b1bd-c55d3508a0dc,4cf7ee33-82ce-47cd-9889-2479d561dd66
+taco-de-adobada,10061,Taco de adobada,Alimentos,40,bf2894fb-37c7-40ae-9c4a-6f4d04bcf4c6,bf2894fb-37c7-40ae-9c4a-6f4d04bcf4c6,669e2a94-6751-425d-a201-83f382be2bda
+taco,10000,Taco de asada,Alimentos,39,3b6faaa2-5d2a-43f9-8abd-40f12561c046,3b6faaa2-5d2a-43f9-8abd-40f12561c046,91ea01d1-b174-48fb-81ef-facbb5067e04
+taco-de-harina-de-adobada-1,10087,Taco de harina de adobada,Alimentos,70,d818a67c-b2e9-4235-8a4c-d151cd501ca5,d818a67c-b2e9-4235-8a4c-d151cd501ca5,44b70305-fa45-48ca-96a3-0a5212c55117
+taco-de-harina-de-carne-1,10090,Taco de harina de asada,Alimentos,75,31f4f243-aa0c-4545-9a1a-77903931e782,31f4f243-aa0c-4545-9a1a-77903931e782,33deab67-af1c-4924-ac77-7c8433292599
+taco-de-harina-de-tripa-1,10088,Taco de harina de tripa,Alimentos,80,af297289-cfa9-438a-8e55-a6786c68defd,af297289-cfa9-438a-8e55-a6786c68defd,08531de4-5389-4b37-a109-773bc93f3944
+taco-de-harina-de-ubre--1,10089,Taco de harina de ubre,Alimentos,80,60093286-8e33-492e-ac16-dd203b8d015e,60093286-8e33-492e-ac16-dd203b8d015e,04fee71b-52f6-4932-a3ad-c26a0d0a8d37
+taco-de-harina-revuelto-1,10086,Taco de harina revuelto,Alimentos,75,9e726542-9a31-4d83-8403-f533cf44ecc9,9e726542-9a31-4d83-8403-f533cf44ecc9,868bbfab-849e-468c-a609-b1e766bd4ee5
+taco-de-tripa,10014,Taco de tripa,Alimentos,45,052d2911-52a5-4fb4-9f67-17a495a17828,052d2911-52a5-4fb4-9f67-17a495a17828,39167011-f6c5-4059-a152-df0e350cffe7
+tacon-de-ubre,10013,Taco de ubre,Alimentos,45,28d00758-1d9d-46eb-8795-9a40c61e6262,28d00758-1d9d-46eb-8795-9a40c61e6262,04cedf82-ecb4-4603-8f39-8740afe35ce8
+taco-revuelto,10031,Taco revuelto,Alimentos,42,c96745ff-8c23-47a8-94a0-53faf314f96e,c96745ff-8c23-47a8-94a0-53faf314f96e,ce1cbdf3-01a7-4823-bfaa-bd4d209521a1
+taqueso-de-adobada,10110,Taqueso de adobada,Alimentos,45,9df75192-6683-4d93-b513-ba74ad445cd6,9df75192-6683-4d93-b513-ba74ad445cd6,b28a989d-3700-4ac9-a01f-3b3cc839cfc2
+taqueso,10012,Taqueso de asada,Alimentos,50,32c2c588-d544-4ef0-84d8-40b2b6ebc023,32c2c588-d544-4ef0-84d8-40b2b6ebc023,9a2f2bcf-968c-484f-8848-594a8d1ce77e
+taqueso-de-tripa,10073,Taqueso de Tripa,Alimentos,50,2fce535a-afd3-415e-bdcd-4b77987f20d7,2fce535a-afd3-415e-bdcd-4b77987f20d7,9b87c15f-d00a-4355-adc2-c37530b6d231
+taqueso-de-ubre,10072,Taqueso de Ubre,Alimentos,50,283d3b2b-be9a-4dba-878b-955763b41409,283d3b2b-be9a-4dba-878b-955763b41409,b6830027-b3fe-4c32-810a-6384bedb2fd2
+taqueso-revuelto,10074,Taqueso Revuelto,Alimentos,47,c2ca6e30-00d4-4c12-8d46-52cfead65fc5,c2ca6e30-00d4-4c12-8d46-52cfead65fc5,f1501a24-8ca2-492e-81cc-508889d0ccb5
+taquito-de-adobadita,10112,Taquito de adobadita,Bebidas,25,66ba5dee-a348-44bd-a307-e65096fc830a,66ba5dee-a348-44bd-a307-e65096fc830a,8d97c93e-8477-4bca-acb9-3f995d95970d
+taquito-de-asadita,10111,Taquito de asadita,Alimentos,25,4ea193ee-9df8-4f34-9417-af849d4cea61,4ea193ee-9df8-4f34-9417-af849d4cea61,a6c38a90-7300-46a8-b65f-b386d80ce6f4
+taquito-de-harina,10176,Taquito de harina,Alimentos,45,3a79912d-be09-490e-a9e3-4bca3d9a3aae,3a79912d-be09-490e-a9e3-4bca3d9a3aae,ff04a27a-08bf-4bcd-bb5b-bb92c7ac5a61
+taquito-de-harina-1,10007,Taquito de Harina,Alimentos,45,3a79912d-be09-490e-a9e3-4bca3d9a3aae,3a79912d-be09-490e-a9e3-4bca3d9a3aae,ff04a27a-08bf-4bcd-bb5b-bb92c7ac5a61
+taquito-de-ubre,10054,Taquito de ubre,Alimentos,25,181ede68-e941-4f86-b57c-4fbcf855ce27,181ede68-e941-4f86-b57c-4fbcf855ce27,99e8f346-dc6a-4d1a-824f-eb36f9e2f958
+tonicol-600-ml,10091,Tonicol 600 ml,Bebidas,35,302edf4d-ce8b-4003-8342-97b8fa13e891,302edf4d-ce8b-4003-8342-97b8fa13e891,33577109-00a8-437a-ac7b-58cb47d2574a
+tortilla-con-asiento,10064,Tortilla con asiento,Alimentos,7,c157bd33-7cc1-4f47-930a-6d1e77892f3f,c157bd33-7cc1-4f47-930a-6d1e77892f3f,cc64d5ae-3275-4066-89d7-a248799d74b8
+tortilla-con-asiento-y-queso,10065,Tortilla con asiento y queso,Alimentos,10,acfe61d7-5f67-44ea-adbc-a189ba8fb67a,acfe61d7-5f67-44ea-adbc-a189ba8fb67a,8df0ae73-9d01-4d98-8440-a291967c491c
+tortilla-con-queso-1,10094,Tortilla con queso,Alimentos,5,e1e458c2-8358-4b9e-9731-09c6ff04b9e6,e1e458c2-8358-4b9e-9731-09c6ff04b9e6,137275a1-74b4-4238-81d9-b4cf28255017
+tortilla-de-harina-1,10093,Tortilla de harina,Alimentos,7,3e8839d8-4448-4cef-902a-a7b014ad9246,3e8839d8-4448-4cef-902a-a7b014ad9246,ffc13760-d85a-450e-9489-dec99b126c72
+tortilla-de-maiz-1,10095,Tortilla de maiz,Alimentos,2,da7295ac-77ec-429e-b470-7ecf16ba3e8b,da7295ac-77ec-429e-b470-7ecf16ba3e8b,93f523a7-f6a7-4fad-ba0d-32114aaeba9b
+tripa,10045,tripa,,variable,982e4b43-23a2-4b9a-87a1-347d739fda16,982e4b43-23a2-4b9a-87a1-347d739fda16,091030e6-49f0-4ddf-b556-a7886694f397
+ubre,10033,Ubre,,variable,eb8f0908-2dbf-43d0-a72d-203f5da1dfa0,eb8f0908-2dbf-43d0-a72d-203f5da1dfa0,73466f34-bb17-4601-9b9f-0c6a4eb071be

@@ -1,0 +1,790 @@
+{
+  "e418ba88-ef96-43e5-a0d4-ee8ffc7f527b": {
+    "nombre": "Planchadita de adobada",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "769c7e6f-ef89-431f-8ae3-a2e4b0b309ad": {
+    "nombre": "Combo Taculichin",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "181ede68-e941-4f86-b57c-4fbcf855ce27": {
+    "nombre": "Taquito de ubre",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "37b8b1d3-17ed-41c6-9603-5565e08f8fe1": {
+    "nombre": "Combo del amor",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+      "6f024048-ab38-4b5c-a42c-feff3c575bcf"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      },
+      {
+        "id": "6f024048-ab38-4b5c-a42c-feff3c575bcf",
+        "nombre": "Elige tu combo",
+        "opciones": []
+      }
+    ]
+  },
+  "d36b9bdd-9b3c-4101-9e8b-9623c9a62ee0": {
+    "nombre": "Agua",
+    "modifier_ids": [
+      "993c0af1-4273-4c8a-b6e4-033bc170b0b1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "993c0af1-4273-4c8a-b6e4-033bc170b0b1",
+        "nombre": ".",
+        "opciones": []
+      }
+    ]
+  },
+  "8111d8ba-b758-4ee5-8fcf-5d6ec2d2f098": {
+    "nombre": "Taquito de Harina",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "67846773-61d4-4d54-8ae8-b8b1a59d0f63": {
+    "nombre": "Extra",
+    "modifier_ids": [
+      "783ef541-dd39-4fe7-8986-da78908f724b"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "783ef541-dd39-4fe7-8986-da78908f724b",
+        "nombre": "Elige tu extra",
+        "opciones": []
+      }
+    ]
+  },
+  "9df75192-6683-4d93-b513-ba74ad445cd6": {
+    "nombre": "Taqueso de adobada",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "e26cc121-2921-4c0b-92a3-5a82b29f075f": {
+    "nombre": "Combo pequeñín",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "4e969bad-c42c-4a60-b540-4e943049c6c1": {
+    "nombre": "Combo familiar",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+      "55857faa-7c96-4b24-b7e4-e3f5664afb7e"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      },
+      {
+        "id": "55857faa-7c96-4b24-b7e4-e3f5664afb7e",
+        "nombre": "Elige tu bebida",
+        "opciones": []
+      }
+    ]
+  },
+  "19d74465-4fd7-4cb7-9b8a-b7e146a7e296": {
+    "nombre": "Combo harinita",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "5c91ba95-9f57-46bb-92c1-e663f0700300": {
+    "nombre": "Combo finde",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+      "551eca02-3703-447a-b280-52cf220ffd46"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      },
+      {
+        "id": "551eca02-3703-447a-b280-52cf220ffd46",
+        "nombre": "Elige tu postre",
+        "opciones": []
+      }
+    ]
+  },
+  "92abef76-f3d0-4687-895b-363091f7aea3": {
+    "nombre": "Combo jueves",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "879ec53c-bbc5-45c3-b470-4b4dcd544c2b": {
+    "nombre": "Combo taquitos",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "3a79912d-be09-490e-a9e3-4bca3d9a3aae": {
+    "nombre": "Taquito de harina",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "776d616e-31db-481e-a734-717085d55687": {
+    "nombre": "Quesadillita de ubre",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "d3cca0ef-7060-45ca-a408-1de09d22fbab": {
+    "nombre": "Combo mini",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "73b0d0ed-4b4b-4ea9-98b1-85ae817b27ea": {
+    "nombre": "Quesadillita de adobadita",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "87e68554-1edb-4f91-a2ec-f5ecdc94aa00": {
+    "nombre": "Quesadillita de asadita",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "66ba5dee-a348-44bd-a307-e65096fc830a": {
+    "nombre": "Taquito de adobadita",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "4ea193ee-9df8-4f34-9417-af849d4cea61": {
+    "nombre": "Taquito de asadita",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "28a69f62-07d4-4bba-993e-4a687917035f": {
+    "nombre": "Combo miércoles",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "38feb4ab-6ac4-499f-aead-80bba1f58cb5": {
+    "nombre": "Quesadillita de asada",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "31f4f243-aa0c-4545-9a1a-77903931e782": {
+    "nombre": "Taco de harina de asada",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "60093286-8e33-492e-ac16-dd203b8d015e": {
+    "nombre": "Taco de harina de ubre",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "af297289-cfa9-438a-8e55-a6786c68defd": {
+    "nombre": "Taco de harina de tripa",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "d818a67c-b2e9-4235-8a4c-d151cd501ca5": {
+    "nombre": "Taco de harina de adobada",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "9e726542-9a31-4d83-8403-f533cf44ecc9": {
+    "nombre": "Taco de harina revuelto",
+    "modifier_ids": [
+      "71f9116d-990d-47c4-8998-8646b3ec894d",
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "71f9116d-990d-47c4-8998-8646b3ec894d",
+        "nombre": "Carnes",
+        "opciones": []
+      },
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "c2ca6e30-00d4-4c12-8d46-52cfead65fc5": {
+    "nombre": "Taqueso Revuelto",
+    "modifier_ids": [
+      "71f9116d-990d-47c4-8998-8646b3ec894d",
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "71f9116d-990d-47c4-8998-8646b3ec894d",
+        "nombre": "Carnes",
+        "opciones": []
+      },
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "2fce535a-afd3-415e-bdcd-4b77987f20d7": {
+    "nombre": "Taqueso de Tripa",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "283d3b2b-be9a-4dba-878b-955763b41409": {
+    "nombre": "Taqueso de Ubre",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "5b52950c-e4e4-40c1-a3b0-d82f724af5b1": {
+    "nombre": "combo del mes",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "f523e74f-3f81-452c-87bb-a97d7e6be619": {
+    "nombre": "Suprema de adobada",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "af7b1136-d0a4-419e-967f-e6bd0a3211fb": {
+    "nombre": "Planchada de adobada",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "bf2894fb-37c7-40ae-9c4a-6f4d04bcf4c6": {
+    "nombre": "Taco de adobada",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "9ca95e59-3bf7-4d23-9960-a82113791c56": {
+    "nombre": "Quesadilla de adobada",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "c2f04410-0b58-4e05-8e7d-2aa68c7b6ad3": {
+    "nombre": "Planchada de harina",
+    "modifier_ids": [
+      "71f9116d-990d-47c4-8998-8646b3ec894d",
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "71f9116d-990d-47c4-8998-8646b3ec894d",
+        "nombre": "Carnes",
+        "opciones": []
+      },
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "c96745ff-8c23-47a8-94a0-53faf314f96e": {
+    "nombre": "Taco revuelto",
+    "modifier_ids": [
+      "71f9116d-990d-47c4-8998-8646b3ec894d",
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "71f9116d-990d-47c4-8998-8646b3ec894d",
+        "nombre": "Carnes",
+        "opciones": []
+      },
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "e6f44b56-ea9b-444e-b1bd-c55d3508a0dc": {
+    "nombre": "Suprema revuelta",
+    "modifier_ids": [
+      "71f9116d-990d-47c4-8998-8646b3ec894d",
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "71f9116d-990d-47c4-8998-8646b3ec894d",
+        "nombre": "Carnes",
+        "opciones": []
+      },
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "8c94def5-4ac1-473e-b5aa-e373d0990ffa": {
+    "nombre": "Planchada revuelta",
+    "modifier_ids": [
+      "71f9116d-990d-47c4-8998-8646b3ec894d",
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "71f9116d-990d-47c4-8998-8646b3ec894d",
+        "nombre": "Carnes",
+        "opciones": []
+      },
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "03a0acdf-880e-4808-9379-67679f752184": {
+    "nombre": "Quesadilla harina revuelta",
+    "modifier_ids": [
+      "71f9116d-990d-47c4-8998-8646b3ec894d",
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "71f9116d-990d-47c4-8998-8646b3ec894d",
+        "nombre": "Carnes",
+        "opciones": []
+      },
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "7fec7d4a-b69e-4dac-8c9a-ab63a9bac87a": {
+    "nombre": "Suprema de Tripa",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "a17832c5-b079-405d-be82-0fb9a13bf33c": {
+    "nombre": "Suprema de Ubre",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "80dce664-67d1-44cd-ae39-e9c8973a6ad8": {
+    "nombre": "Planchada de tripa",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "cbcb64e4-b1c6-4444-8dc3-fd99b69a6223": {
+    "nombre": "Planchada de Ubre",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "a8f2c3d9-bc56-4be8-bfd0-9e786f8d67bd": {
+    "nombre": "Quesadilla harina ubre",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "4066177c-6ecf-4e65-be92-ebad65cecdf7": {
+    "nombre": "Quesadilla harina tripa",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "052d2911-52a5-4fb4-9f67-17a495a17828": {
+    "nombre": "Taco de tripa",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "28d00758-1d9d-46eb-8795-9a40c61e6262": {
+    "nombre": "Taco de ubre",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "32c2c588-d544-4ef0-84d8-40b2b6ebc023": {
+    "nombre": "Taqueso de asada",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "c92aad79-68c4-4b98-a6a6-ed4adc5c0106": {
+    "nombre": "Orden",
+    "modifier_ids": [
+      "5b6a49dc-e036-431c-8239-4fa71d756382"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "5b6a49dc-e036-431c-8239-4fa71d756382",
+        "nombre": "Carne orden",
+        "opciones": []
+      }
+    ]
+  },
+  "965d6362-82c7-416e-b7a6-7652a46bcc8f": {
+    "nombre": "CocaCola",
+    "modifier_ids": [
+      "1c79cab8-5a94-4bd2-92d5-6285b21d4b30"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "1c79cab8-5a94-4bd2-92d5-6285b21d4b30",
+        "nombre": "Tipo",
+        "opciones": []
+      }
+    ]
+  },
+  "9e8c0e50-1c3e-44fd-99bd-b4e3aa03f919": {
+    "nombre": "Suprema de asada",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "de6f1b9f-74eb-4758-af3e-72c4c66a4c3e": {
+    "nombre": "Planchada de asada",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "60aa6c99-6a4a-4ae7-b24e-4aea4a8ccf5c": {
+    "nombre": "Quesadilla harina asada",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  },
+  "3b6faaa2-5d2a-43f9-8abd-40f12561c046": {
+    "nombre": "Taco de asada",
+    "modifier_ids": [
+      "b08141f1-d82b-4fda-b342-621ee4e2aef1"
+    ],
+    "modifiers_detalle": [
+      {
+        "id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+        "nombre": "Ingredientes",
+        "opciones": []
+      }
+    ]
+  }
+}

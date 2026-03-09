@@ -1,0 +1,108 @@
+{
+  "payment_types": {
+    "whatsapp":      "e1c6f771-8297-4143-b6c5-2b4f56b222c2",
+    "link":          "d8acc20d-36ae-49a8-8784-1d36f55713f6",
+    "transferencia": "0acfc78a-805a-48a6-b5df-c34b8d222a5e",
+    "tarjeta":       "4fee5da0-b634-4d6e-8622-7041539a3ea4",
+    "efectivo":      "c3893ff7-62f7-4436-80f5-17b2211ad2a3",
+    "default":       "c3893ff7-62f7-4436-80f5-17b2211ad2a3"
+  },
+
+
+  "domicilios": {
+    "10": { "item_id": "8e095f8b-6b8b-478c-b55e-a9c099c5efe3", "variant_id": "fbfaf445-94fa-48ca-8ef1-873f9e2066f2", "nombre": "Domicilio 10", "distancia": "especial" },
+    "15": { "item_id": "8a9d65ca-6d28-4984-9257-2cde81a1e350", "variant_id": "17417bf9-01a1-4037-91ed-cbbe4002cf8d", "nombre": "Domicilio 1",  "distancia": "0-1 km" },
+    "20": { "item_id": "13f55b59-3301-414b-8902-c86fa238ddcf", "variant_id": "90803063-e03e-41a8-9dac-bbc36861359b", "nombre": "Domicilio 2",  "distancia": "1-2 km" },
+    "25": { "item_id": "c0133f64-3c36-474d-8da2-415a042b6625", "variant_id": "de27a639-da6b-4957-8dc1-13d49609e048", "nombre": "Domicilio 3",  "distancia": "2-3 km" },
+    "30": { "item_id": "2691479d-8d8d-44c2-957b-61a24c7ea5d0", "variant_id": "aeba87fd-c949-4dd9-9064-5f45aa3eac11", "nombre": "Domicilio 4",  "distancia": "3-4 km" },
+    "35": { "item_id": "e2df97cf-3ffc-4ab8-a2bf-16a84b4d1509", "variant_id": "4b0e2204-4afa-43fb-8cf6-a2b1e3163b4c", "nombre": "Domicilio 5",  "distancia": "4-5 km" }
+  },
+
+  "modificadores": {
+
+    "ingredientes": {
+      "_grupo_id": "b08141f1-d82b-4fda-b342-621ee4e2aef1",
+      "con todo":           { "modifier_id": "b08141f1-d82b-4fda-b342-621ee4e2aef1", "option_id": "284cc393-57a9-45ea-904d-4e5bec71ba79" },
+      "natural":            { "modifier_id": "b08141f1-d82b-4fda-b342-621ee4e2aef1", "option_id": "38af1089-f0d1-47f7-8700-92cf364144ea" },
+      "naturales":          { "modifier_id": "b08141f1-d82b-4fda-b342-621ee4e2aef1", "option_id": "38af1089-f0d1-47f7-8700-92cf364144ea" },
+      "sin verdura":        { "modifier_id": "b08141f1-d82b-4fda-b342-621ee4e2aef1", "option_id": "38af1089-f0d1-47f7-8700-92cf364144ea" },
+      "sin frijol":         { "modifier_id": "b08141f1-d82b-4fda-b342-621ee4e2aef1", "option_id": "408ae9ef-ca67-4959-8d3e-2c77e82ec69c" },
+      "sin cebolla":        { "modifier_id": "b08141f1-d82b-4fda-b342-621ee4e2aef1", "option_id": "0404554c-6014-4c3e-a8ed-a4f4e35b88af" },
+      "sin jugo":           { "modifier_id": "b08141f1-d82b-4fda-b342-621ee4e2aef1", "option_id": "48476d50-ec4f-4763-80f0-2755a414d21a" },
+      "sin jugo de tomate": { "modifier_id": "b08141f1-d82b-4fda-b342-621ee4e2aef1", "option_id": "48476d50-ec4f-4763-80f0-2755a414d21a" },
+      "sin picante":        { "modifier_id": "b08141f1-d82b-4fda-b342-621ee4e2aef1", "option_id": "61c5ba6a-7e24-4508-87d6-1a322834269e" },
+      "puro jugo":          { "modifier_id": "b08141f1-d82b-4fda-b342-621ee4e2aef1", "option_id": "da8384b9-9764-4439-804c-d15e6eac45ee" },
+      "puro frijol":        { "modifier_id": "b08141f1-d82b-4fda-b342-621ee4e2aef1", "option_id": "0fd42679-fb28-49e9-9f1b-4ad8a8d3df23" },
+      "puro picante":       { "modifier_id": "b08141f1-d82b-4fda-b342-621ee4e2aef1", "option_id": "03ab7e1a-d6b1-4b16-b1a4-17d8d14a55e3" },
+      "pura cebolla":       { "modifier_id": "b08141f1-d82b-4fda-b342-621ee4e2aef1", "option_id": "a95df1e8-d033-4160-9f95-d46fa32515bc" },
+      "dorado":             { "modifier_id": "b08141f1-d82b-4fda-b342-621ee4e2aef1", "option_id": "9e1d1f15-0027-4b87-a8fd-45f02650fbc9" },
+      "semidorado":         { "modifier_id": "b08141f1-d82b-4fda-b342-621ee4e2aef1", "option_id": "c9d1630c-8507-49d9-a944-04af38a2bc4b" }
+    },
+
+    "carnes": {
+      "_nota": "Grupo 'Carnes' (tacos, quesadillas, planchadas - todos los platillos principales)",
+      "_grupo_id": "71f9116d-990d-47c4-8998-8646b3ec894d",
+      "asada":     { "modifier_id": "71f9116d-990d-47c4-8998-8646b3ec894d", "option_id": "ea6e0ef7-4afd-40b7-b99c-7b004182cb0e" },
+      "carne":     { "modifier_id": "71f9116d-990d-47c4-8998-8646b3ec894d", "option_id": "ea6e0ef7-4afd-40b7-b99c-7b004182cb0e" },
+      "adobada":   { "modifier_id": "71f9116d-990d-47c4-8998-8646b3ec894d", "option_id": "82f7fbc3-3cc7-42db-b0e5-2c4d399376c1" },
+      "tripa":     { "modifier_id": "71f9116d-990d-47c4-8998-8646b3ec894d", "option_id": "76380943-7a03-4fc0-adca-cd07861248a9" },
+      "ubre":      { "modifier_id": "71f9116d-990d-47c4-8998-8646b3ec894d", "option_id": "7c43b2f7-9f85-4eda-b71d-818563dcbc26" }
+    },
+
+    "carne_simple": {
+      "_nota": "Grupo 'Carne' (combos y productos solo con asada/adobada)",
+      "_grupo_id": "c0ec8cac-4af4-47df-b499-eef1972ab882",
+      "asada":     { "modifier_id": "c0ec8cac-4af4-47df-b499-eef1972ab882", "option_id": "6d0c2722-8c84-4044-be94-0374da192f5f" },
+      "carne":     { "modifier_id": "c0ec8cac-4af4-47df-b499-eef1972ab882", "option_id": "6d0c2722-8c84-4044-be94-0374da192f5f" },
+      "adobada":   { "modifier_id": "c0ec8cac-4af4-47df-b499-eef1972ab882", "option_id": "f0c432bb-6592-4dae-9a7b-b3f2cfec0fae" }
+    },
+
+    "carne_orden": {
+      "_nota": "Grupo 'Carne orden' (órdenes/porciones con todas las carnes)",
+      "_grupo_id": "5b6a49dc-e036-431c-8239-4fa71d756382",
+      "asada":     { "modifier_id": "5b6a49dc-e036-431c-8239-4fa71d756382", "option_id": "0770e9ce-d831-425f-afc1-ca38b0d52a70" },
+      "carne":     { "modifier_id": "5b6a49dc-e036-431c-8239-4fa71d756382", "option_id": "0770e9ce-d831-425f-afc1-ca38b0d52a70" },
+      "tripa":     { "modifier_id": "5b6a49dc-e036-431c-8239-4fa71d756382", "option_id": "5534bd51-86bd-4bb0-b13b-be3b0ac2324e" },
+      "ubre":      { "modifier_id": "5b6a49dc-e036-431c-8239-4fa71d756382", "option_id": "646f06d3-e3ff-46b8-ac10-50dc2dd44942" },
+      "adobada":   { "modifier_id": "5b6a49dc-e036-431c-8239-4fa71d756382", "option_id": "13233b87-2878-4fd8-9388-3e0f89aa4150" }
+    },
+
+    "combos": {
+      "_grupo_id": "6f024048-ab38-4b5c-a42c-feff3c575bcf",
+      "quesadilla y taco":  { "modifier_id": "6f024048-ab38-4b5c-a42c-feff3c575bcf", "option_id": "98cb1c4c-4d6d-45e9-87ad-cc4a40aac308" },
+      "planchada y taco":   { "modifier_id": "6f024048-ab38-4b5c-a42c-feff3c575bcf", "option_id": "28d644cd-18e2-4e32-95ff-be528e21a756" },
+      "pellizcada y taco":  { "modifier_id": "6f024048-ab38-4b5c-a42c-feff3c575bcf", "option_id": "0dac8e98-bf5a-40eb-9ff0-057fdb0e23d9" }
+    },
+
+    "bebidas": {
+      "_grupo_id_hielo": "993c0af1-4273-4c8a-b6e4-033bc170b0b1",
+      "_grupo_id_tipo":  "1c79cab8-5a94-4bd2-92d5-6285b21d4b30",
+      "_grupo_id_elige": "55857faa-7c96-4b24-b7e4-e3f5664afb7e",
+      "con hielo":       { "modifier_id": "993c0af1-4273-4c8a-b6e4-033bc170b0b1", "option_id": "97673e08-ad61-4de5-9fd1-63fea79d5481" },
+      "sin hielo":       { "modifier_id": "993c0af1-4273-4c8a-b6e4-033bc170b0b1", "option_id": "81b8311c-56a8-4d50-8ce5-112e2d08964d" },
+      "sin azucar":      { "modifier_id": "1c79cab8-5a94-4bd2-92d5-6285b21d4b30", "option_id": "cb2220bf-7279-4406-b407-b635b5b4ab95" },
+      "light":           { "modifier_id": "1c79cab8-5a94-4bd2-92d5-6285b21d4b30", "option_id": "4870e5b9-6cd4-4db2-abe6-50eaa69ea377" },
+      "cebada de litro": { "modifier_id": "55857faa-7c96-4b24-b7e4-e3f5664afb7e", "option_id": "faf27d5a-f707-49c3-b14f-75fa0b2e84f1" },
+      "jamaica de litro":{ "modifier_id": "55857faa-7c96-4b24-b7e4-e3f5664afb7e", "option_id": "c35a7e68-365d-49d0-8cb5-11b48db47c98" }
+    },
+
+    "extras": {
+      "_grupo_id": "783ef541-dd39-4fe7-8986-da78908f724b",
+      "jugo de tomate":           { "modifier_id": "783ef541-dd39-4fe7-8986-da78908f724b", "option_id": "42354f6b-600e-485c-bede-71791ebbf51b" },
+      "salsa verde":              { "modifier_id": "783ef541-dd39-4fe7-8986-da78908f724b", "option_id": "f405a603-20b3-420d-8d42-14a223b19c64" },
+      "cebolla cruda":            { "modifier_id": "783ef541-dd39-4fe7-8986-da78908f724b", "option_id": "2c2d6c69-cb65-4d2b-bb36-c3ff17fb6adc" },
+      "frijol":                   { "modifier_id": "783ef541-dd39-4fe7-8986-da78908f724b", "option_id": "fe4debe1-6e01-4ef1-bfc5-16de4ecb97fb" },
+      "cebolla curtida":          { "modifier_id": "783ef541-dd39-4fe7-8986-da78908f724b", "option_id": "8bd17092-6d54-4416-897c-394574d628b0" },
+      "salsa cruda":              { "modifier_id": "783ef541-dd39-4fe7-8986-da78908f724b", "option_id": "1cf71a17-d7b4-42bc-8194-de4fbc1c6606" },
+      "tortilla":                 { "modifier_id": "783ef541-dd39-4fe7-8986-da78908f724b", "option_id": "e13c7b0f-d23f-4459-86d5-ecde4a8f36bb" },
+      "tortilla dorada":          { "modifier_id": "783ef541-dd39-4fe7-8986-da78908f724b", "option_id": "ad206149-7fc4-43b3-9a39-9090c9d0a0cb" },
+      "chile toreado":            { "modifier_id": "783ef541-dd39-4fe7-8986-da78908f724b", "option_id": "e3932929-7acb-4856-a3c9-be921a7586a0" }
+    },
+
+    "postres": {
+      "_grupo_id": "551eca02-3703-447a-b280-52cf220ffd46",
+      "chocoflan":                { "modifier_id": "551eca02-3703-447a-b280-52cf220ffd46", "option_id": "77c29693-61f4-45bf-a2cb-4ce43453fd7e" },
+      "rebanada de chocoflan":    { "modifier_id": "551eca02-3703-447a-b280-52cf220ffd46", "option_id": "77c29693-61f4-45bf-a2cb-4ce43453fd7e" }
+    }
+  }
+}

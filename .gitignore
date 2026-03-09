@@ -1,0 +1,45 @@
+# =============================================
+# TACOS ARAGÓN BOT LLAMADAS — .gitignore
+# =============================================
+
+# --- CREDENCIALES (NUNCA subir) ---
+.env
+.env.local
+.env.production
+*.env
+
+# --- CREDENCIALES GOOGLE CLOUD ---
+datos/google-credentials.json
+datos/*.json.key
+*-credentials.json
+*serviceaccount*.json
+
+# --- TOKENS LOYVERSE ---
+datos/loyverse_token.txt
+datos/loyverse_store_id.txt
+datos/loyverse_payment_type_id.txt
+
+# --- AUDIO DE LLAMADAS (generado automáticamente) ---
+audio_cache/
+*.mp3
+*.wav
+*.ogg
+
+# --- LOGS (pueden contener transcripciones de llamadas) ---
+logs/
+*.log
+
+# --- NODE ---
+node_modules/
+
+# --- ARCHIVOS TEMPORALES ---
+{datos,audio_cache}
+claude-terminal.zip
+setup.bat
+
+# --- HERRAMIENTAS DE DESARROLLO ---
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
