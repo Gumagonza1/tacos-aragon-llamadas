@@ -7,6 +7,12 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 const fs = require('fs');
 const path = require('path');
 
+// CRITICAL: Fail fast if API key is missing
+if (!process.env.GEMINI_API_KEY) {
+  console.error('[Gemini] FATAL: GEMINI_API_KEY no está configurada en las variables de entorno');
+  process.exit(1);
+}
+
 class GeminiHandler {
   constructor() {
     this.genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);

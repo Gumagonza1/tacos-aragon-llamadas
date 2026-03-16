@@ -6,6 +6,8 @@
 require('dotenv').config();
 const express = require('express');
 const twilio = require('twilio');
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
 const path = require('path');
 const priceCalculator = require('./price_calculator');
 
@@ -15,15 +17,66 @@ const sttHandler = require('./stt_handler');
 const ttsHandler = require('./tts_handler');
 const geminiHandler = require('./gemini_handler');
 
+// Fix 3: require at top of file — never inside handlers
+const { crearOrdenEnLoyverse } = require('./loyverse_integration');
+
+// Validación de variables requeridas al inicio
+const REQUIRED_VARS = ['TWILIO_ACCOUNT_SID', 'TWILIO_AUTH_TOKEN', 'BASE_URL'];
+const missingVars = REQUIRED_VARS.filter(v => !process.env[v]);
+if (missingVars.length > 0) {
+  console.error(`❌ Variables de entorno requeridas no configuradas: ${missingVars.join(', ')}`);
+  process.exit(1);
+}
+
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+// Fix 9: Security headers via helmet
+app.use(helmet());
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Servir archivos de audio estáticos
-app.use('/audio', express.static(ttsHandler.getAudioDirectory()));
+// Fix 6: Audio files served with random UUIDs in filename (already done by tts_handler using uuidv4).
+// Additionally restrict direct directory listing — only exact filename access is allowed via static.
+app.use('/audio', express.static(ttsHandler.getAudioDirectory(), { index: false }));
+
+// ─────────────────────────────────────────────
+// FIX 4: TWILIO WEBHOOK SIGNATURE VALIDATION
+// ─────────────────────────────────────────────
+
+/**
+ * Middleware: Validate that the request came from Twilio using HMAC signature.
+ * Skipped in dev if TWILIO_AUTH_TOKEN is not set.
+ */
+function validarTwilio(req, res, next) {
+  const authToken = process.env.TWILIO_AUTH_TOKEN;
+  if (!authToken) {
+    // Skip validation in dev environments where token is not configured
+    return next();
+  }
+  const signature = req.headers['x-twilio-signature'];
+  const url = process.env.BASE_URL + req.originalUrl;
+  const valid = twilio.validateRequest(authToken, signature, url, req.body);
+  if (!valid) {
+    console.warn('[Security] Twilio signature validation failed for:', req.originalUrl);
+    return res.status(403).send('Forbidden');
+  }
+  next();
+}
+
+// ─────────────────────────────────────────────
+// FIX 7: RATE LIMITING FOR WEBHOOK ENDPOINTS
+// ─────────────────────────────────────────────
+
+const webhookLimiter = rateLimit({
+  windowMs: 60 * 1000, // 1 minute
+  max: 60,             // max 60 requests per IP per minute
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: 'Demasiadas solicitudes. Intente más tarde.'
+});
 
 // ─────────────────────────────────────────────
 // HORARIO Y ZONA HORARIA (GMT-7 Culiacán)
@@ -79,16 +132,14 @@ async function generateGreeting() {
 /**
  * Webhook: Cuando Twilio recibe una llamada entrante
  */
-app.post('/webhook/voice', async (req, res) => {
+app.post('/webhook/voice', webhookLimiter, validarTwilio, async (req, res) => {
   try {
     const callSid = req.body.CallSid;
     const from = req.body.From;
 
     console.log(`\n=== NUEVA LLAMADA ===`);
     console.log(`CallSid: ${callSid}`);
-    console.log(`Desde: ${from}`);
     console.log(`Puede atender: ${puedeAtender(from)}`);
-    console.log(`Número en lista: ${NUMEROS_PRUEBA.includes(from)}`);
 
     // Verificar horario ANTES de inicializar la llamada
     if (!puedeAtender(from)) {
@@ -138,14 +189,13 @@ app.post('/webhook/voice', async (req, res) => {
 /**
  * Webhook: Procesa la respuesta del cliente (después de Gather)
  */
-app.post('/webhook/gather', async (req, res) => {
+app.post('/webhook/gather', webhookLimiter, validarTwilio, async (req, res) => {
   try {
     const callSid = req.body.CallSid;
     const speechResult = req.body.SpeechResult;
     const from = req.body.From;
 
     console.log(`\n[Gather] CallSid: ${callSid}`);
-    console.log(`[Gather] Cliente dijo: "${speechResult}"`);
 
     if (!speechResult) {
       return handleNoInput(req, res);
@@ -226,7 +276,7 @@ app.post('/webhook/gather', async (req, res) => {
 /**
  * Webhook: Cuando no hay respuesta del cliente
  */
-app.post('/webhook/no-input', (req, res) => {
+app.post('/webhook/no-input', webhookLimiter, validarTwilio, (req, res) => {
   console.log('[No Input] Cliente no respondió');
 
   const twiml = new twilio.twiml.VoiceResponse();
@@ -252,7 +302,7 @@ app.post('/webhook/no-input', (req, res) => {
 /**
  * Webhook: Cuando la llamada finaliza
  */
-app.post('/webhook/status', (req, res) => {
+app.post('/webhook/status', webhookLimiter, validarTwilio, (req, res) => {
   const callSid = req.body.CallSid;
   const callStatus = req.body.CallStatus;
 
@@ -272,23 +322,19 @@ app.post('/webhook/status', (req, res) => {
 async function handleOrderComplete(req, res, callSid, orderData, ventaJSON, numeroCliente, nombreCliente) {
   try {
     console.log('[Order Complete] Procesando orden...');
-    console.log('[Order Complete] Texto del pedido:', orderData.substring(0, 200));
-
-    const { crearOrdenEnLoyverse } = require('./loyverse_integration');
 
     let ordenLoyverse = null;
     try {
-      console.log('🛒 Registrando en Loyverse...');
+      console.log('[Order Complete] Registrando en Loyverse...');
       ordenLoyverse = await crearOrdenEnLoyverse(orderData, nombreCliente, numeroCliente, ventaJSON);
 
       if (ordenLoyverse) {
-        console.log(`✅ Loyverse: #${ordenLoyverse.receipt_number}`);
-        console.log(`💰 Total: $${ordenLoyverse.total_money}`);
+        console.log(`[Order Complete] Loyverse: #${ordenLoyverse.receipt_number}`);
       } else {
-        console.log('⚠️ No se pudo crear orden en Loyverse');
+        console.log('[Order Complete] No se pudo crear orden en Loyverse');
       }
     } catch (eLoy) {
-      console.error('❌ Error Loyverse:', eLoy.message);
+      console.error('[Order Complete] Error Loyverse:', eLoy.message);
     }
 
     let farewell;
@@ -356,15 +402,15 @@ app.listen(PORT, () => {
   console.log(`\n╔════════════════════════════════════════════╗`);
   console.log(`║   Bot de Llamadas - Tacos Aragón         ║`);
   console.log(`╚════════════════════════════════════════════╝`);
-  console.log(`\n🚀 Servidor corriendo en puerto ${PORT}`);
-  console.log(`📞 Webhook URL: ${process.env.BASE_URL}/webhook/voice`);
-  console.log(`💚 Health check: http://localhost:${PORT}/health\n`);
+  console.log(`\nServidor corriendo en puerto ${PORT}`);
+  console.log(`Webhook URL: ${process.env.BASE_URL}/webhook/voice`);
+  console.log(`Health check: http://localhost:${PORT}/health\n`);
 });
 
 process.on('uncaughtException', (error) => {
-  console.error('❌ Uncaught Exception:', error);
+  console.error('[Fatal] Uncaught Exception:', error);
 });
 
 process.on('unhandledRejection', (error) => {
-  console.error('❌ Unhandled Rejection:', error);
+  console.error('[Fatal] Unhandled Rejection:', error);
 });

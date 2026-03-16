@@ -5,32 +5,37 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-// 🔑 TOKEN DE LOYVERSE (guardar en datos/loyverse_token.txt)
-let LOYVERSE_TOKEN = '';
-try {
-    LOYVERSE_TOKEN = fs.readFileSync(path.join(__dirname, 'datos', 'loyverse_token.txt'), 'utf8').trim();
-} catch (e) {
-    console.log('⚠️ No se encontró token de Loyverse. Crea datos/loyverse_token.txt');
+// 🔑 TOKEN DE LOYVERSE — env var tiene prioridad; fallback a archivo (NO comitear el archivo)
+let LOYVERSE_TOKEN = process.env.LOYVERSE_TOKEN || '';
+if (!LOYVERSE_TOKEN) {
+    try {
+        LOYVERSE_TOKEN = fs.readFileSync(path.join(__dirname, 'datos', 'loyverse_token.txt'), 'utf8').trim();
+    } catch (e) {
+        // archivo no disponible; la validación de abajo forzará exit(1)
+    }
 }
 
-// 🏪 ID DE TU TIENDA/SUCURSAL (lo obtienes del script de setup)
-let STORE_ID = '';
-try {
-    STORE_ID = fs.readFileSync(path.join(__dirname, 'datos', 'loyverse_store_id.txt'), 'utf8').trim();
-} catch (e) {
-    console.log('⚠️ No se encontró Store ID. Crea datos/loyverse_store_id.txt');
+// 🏪 ID DE TU TIENDA/SUCURSAL
+let STORE_ID = process.env.LOYVERSE_STORE_ID || '';
+if (!STORE_ID) {
+    try {
+        STORE_ID = fs.readFileSync(path.join(__dirname, 'datos', 'loyverse_store_id.txt'), 'utf8').trim();
+    } catch (e) {
+        // archivo no disponible
+    }
 }
 
 // 💳 ID DEL TIPO DE PAGO (para órdenes pendientes/custom)
-let PAYMENT_TYPE_ID = null; // null = usará el primer tipo de pago disponible
-try {
-    const paymentTypeFile = fs.readFileSync(path.join(__dirname, 'datos', 'loyverse_payment_type_id.txt'), 'utf8').trim();
-    if (paymentTypeFile && paymentTypeFile !== '') {
-        PAYMENT_TYPE_ID = paymentTypeFile;
-        console.log(`💳 Usando payment type ID: ${PAYMENT_TYPE_ID.substring(0, 20)}...`);
+let PAYMENT_TYPE_ID = process.env.LOYVERSE_PAYMENT_TYPE_ID || null;
+if (!PAYMENT_TYPE_ID) {
+    try {
+        const paymentTypeFile = fs.readFileSync(path.join(__dirname, 'datos', 'loyverse_payment_type_id.txt'), 'utf8').trim();
+        if (paymentTypeFile && paymentTypeFile !== '') {
+            PAYMENT_TYPE_ID = paymentTypeFile;
+        }
+    } catch (e) {
+        // archivo no disponible
     }
-} catch (e) {
-    console.log('⚠️ No se encontró payment_type_id. Ejecuta: node obtener_payment_types.js');
 }
 
 // 🗺️ CONFIGURACIÓN COMPLETA (Payment Types + Domicilios + Modificadores)
@@ -39,22 +44,41 @@ try {
     const configFile = fs.readFileSync(path.join(__dirname, 'datos', 'loyverse_config.json'), 'utf8');
     LOYVERSE_CONFIG = JSON.parse(configFile);
     const tieneModificadores = LOYVERSE_CONFIG.modificadores ? '+ modificadores' : '(sin modificadores aún)';
-    console.log(`✅ Configuración de Loyverse cargada (payment types + domicilios ${tieneModificadores})`);
-    
+    console.log(`[Loyverse] Configuración cargada (payment types + domicilios ${tieneModificadores})`);
+
     if (LOYVERSE_CONFIG && LOYVERSE_CONFIG.payment_types) {
-        PAYMENT_TYPE_ID = LOYVERSE_CONFIG.payment_types.default;
+        PAYMENT_TYPE_ID = PAYMENT_TYPE_ID || LOYVERSE_CONFIG.payment_types.default;
     }
 } catch (e) {
-    console.log('⚠️ No se encontró loyverse_config.json. Ejecuta: node configurar_loyverse.js');
+    console.log('[Loyverse] No se encontró loyverse_config.json. Ejecuta: node configurar_loyverse.js');
 }
 
 // 📱 ID DEL PDV (POS Device) para asignar ventas
-let POS_DEVICE_ID = null;
-try {
-    POS_DEVICE_ID = fs.readFileSync(path.join(__dirname, 'datos', 'loyverse_pos_device_id.txt'), 'utf8').trim();
-    console.log(`📱 PDV asignado: ${POS_DEVICE_ID.substring(0, 20)}...`);
-} catch (e) {
-    console.log('⚠️ No se encontró pos_device_id. Las ventas no se asignarán a un PDV.');
+let POS_DEVICE_ID = process.env.LOYVERSE_POS_DEVICE_ID || null;
+if (!POS_DEVICE_ID) {
+    try {
+        POS_DEVICE_ID = fs.readFileSync(path.join(__dirname, 'datos', 'loyverse_pos_device_id.txt'), 'utf8').trim();
+    } catch (e) {
+        console.log('[Loyverse] No se encontró pos_device_id. Las ventas no se asignarán a un PDV.');
+    }
+}
+
+// CRITICAL: Fail fast if required Loyverse configuration is missing
+if (!LOYVERSE_TOKEN) {
+    console.error('[Loyverse] FATAL: LOYVERSE_TOKEN no está configurado. Establece la variable de entorno LOYVERSE_TOKEN o crea datos/loyverse_token.txt');
+    process.exit(1);
+}
+if (!STORE_ID) {
+    console.error('[Loyverse] FATAL: LOYVERSE_STORE_ID no está configurado. Establece la variable de entorno LOYVERSE_STORE_ID o crea datos/loyverse_store_id.txt');
+    process.exit(1);
+}
+if (!PAYMENT_TYPE_ID) {
+    console.error('[Loyverse] FATAL: LOYVERSE_PAYMENT_TYPE_ID no está configurado. Establece la variable de entorno LOYVERSE_PAYMENT_TYPE_ID o crea datos/loyverse_payment_type_id.txt');
+    process.exit(1);
+}
+if (!POS_DEVICE_ID) {
+    console.error('[Loyverse] FATAL: LOYVERSE_POS_DEVICE_ID no está configurado. Establece la variable de entorno LOYVERSE_POS_DEVICE_ID o crea datos/loyverse_pos_device_id.txt');
+    process.exit(1);
 }
 
 // 👤 CLIENTES TIPO (DOMICILIO / RECOGER) para asignar en cada ticket
@@ -91,12 +115,12 @@ async function buscarClientePorTelefono(numeroCliente) {
         for (const c of clientes) {
             const telGuardado = (c.phone_number || '').replace(/\D/g, '').slice(-10);
             if (telGuardado === num10) {
-                console.log(`  👤 Cliente encontrado en Loyverse: "${c.name}" (${c.id.substring(0,8)}...)`);
+                console.log(`[Loyverse] Cliente encontrado`);
                 return { id: c.id, name: c.name };
             }
         }
-        
-        console.log(`  👤 No se encontró cliente con teléfono ${num10} en Loyverse`);
+
+        console.log(`[Loyverse] No se encontró cliente en Loyverse`);
         return null;
     } catch (e) {
         console.log(`  ⚠️ Error buscando cliente: ${e.message}`);
@@ -125,7 +149,6 @@ function filtrarModificadoresValidos(modificadores, itemId) {
             validos.push(mod);
         } else {
             rechazados.push(mod);
-            console.log(`    ❌ Modifier ${mod.modifier_id.substring(0,8)}... NO pertenece a este producto → rechazado`);
         }
     }
     
@@ -227,70 +250,50 @@ function obtenerModificadoresLoyverse(textoCompleto, nombreProducto) {
     const prodNorm = (nombreProducto || '').toLowerCase()
         .normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     
-    console.log(`    🔬 textoNorm="${t}" | prod="${prodNorm}"`);
-    
     const resultado   = [];   // [{modifier_id, modifier_option_id}, ...]
     const yaEnModifier = new Set();  // palabras que ya van como modifier (no duplicar en line_note)
-    
+
     // Helper: agrega al resultado y guarda la clave en yaEnModifier
     function agregar(resultado_kv) {
         if (!resultado_kv) return;
         const { key, val } = resultado_kv;
         resultado.push({ modifier_id: val.modifier_id, modifier_option_id: val.option_id });
         if (key) yaEnModifier.add(key);
-        console.log(`    ✅ "${key}" → mod=${val.modifier_id.substring(0,8)}... opt=${val.option_id.substring(0,8)}...`);
     }
-    
-    // 1. INGREDIENTES (verduras) ─────────────────────────────────────────────
-    // con todo, naturales, sin frijol, sin cebolla, sin jugo, dorado, semidorado...
-    console.log(`    🔬 [ingredientes]`);
+
+    // 1. INGREDIENTES (verduras)
     const matchIng = buscarEnGrupo(mods.ingredientes, t);
-    matchIng ? agregar(matchIng) : console.log(`    ℹ️  ingredientes: sin match`);
-    
-    // 2. CARNE ───────────────────────────────────────────────────────────────
-    // orden/porcion → carne_orden | combo → carne_simple | demás → carnes
+    if (matchIng) agregar(matchIng);
+
+    // 2. CARNE — orden/porcion → carne_orden | combo → carne_simple | demás → carnes
     const esOrden = prodNorm.includes('orden') || prodNorm.includes('porcion');
     const esCombo = prodNorm.includes('combo');
     const grupoCarneNombre = esOrden ? 'carne_orden' : esCombo ? 'carne_simple' : 'carnes';
-    console.log(`    🔬 [carne → ${grupoCarneNombre}]`);
     const matchCarne = buscarEnGrupo(mods[grupoCarneNombre], t);
-    matchCarne ? agregar(matchCarne) : console.log(`    ℹ️  ${grupoCarneNombre}: sin match`);
-    
-    // 3. TIPO DE COMBO ────────────────────────────────────────────────────────
-    // quesadilla y taco | planchada y taco | pellizcada y taco
+    if (matchCarne) agregar(matchCarne);
+
+    // 3. TIPO DE COMBO
     if (esCombo) {
-        console.log(`    🔬 [combos]`);
         const matchCombo = buscarEnGrupo(mods.combos, t);
-        matchCombo ? agregar(matchCombo) : console.log(`    ℹ️  combos: sin match`);
+        if (matchCombo) agregar(matchCombo);
     }
-    
-    // 4. BEBIDAS ──────────────────────────────────────────────────────────────
-    // 3 grupos independientes: hielo | tipo (azucar/light) | elige (cebada/jamaica litro)
-    // Un pedido puede usar varios: "Cebada sin hielo" → tipo-litro + sin-hielo
-    console.log(`    🔬 [bebidas]`);
+
+    // 4. BEBIDAS — 3 grupos independientes: hielo | tipo | elige
     const matchesBebida = buscarTodosEnGrupo(mods.bebidas, t);
     if (matchesBebida.length > 0) {
         matchesBebida.forEach(({ key, val }) => {
             resultado.push({ modifier_id: val.modifier_id, modifier_option_id: val.option_id });
             yaEnModifier.add(key);
         });
-        console.log(`    ✅ bebidas: ${matchesBebida.length} modifier(s)`);
-    } else {
-        console.log(`    ℹ️  bebidas: sin match`);
     }
-    
-    // 5. EXTRAS ───────────────────────────────────────────────────────────────
-    // tortilla dorada > tortilla | salsa verde | chile toreado | etc.
-    console.log(`    🔬 [extras]`);
+
+    // 5. EXTRAS
     const matchExtra = buscarEnGrupo(mods.extras, t);
-    matchExtra ? agregar(matchExtra) : console.log(`    ℹ️  extras: sin match`);
-    
-    // 6. POSTRES ──────────────────────────────────────────────────────────────
-    console.log(`    🔬 [postres]`);
+    if (matchExtra) agregar(matchExtra);
+
+    // 6. POSTRES
     const matchPostre = buscarEnGrupo(mods.postres, t);
-    matchPostre ? agregar(matchPostre) : console.log(`    ℹ️  postres: sin match`);
-    
-    console.log(`    🔬 TOTAL modifiers: ${resultado.length}`);
+    if (matchPostre) agregar(matchPostre);
     return { modifiers: resultado, yaEnModifier };
 }
 
@@ -688,11 +691,6 @@ async function crearOrdenEnLoyverse(pedidoTexto, nombreCliente, numeroCliente, v
         const lineItems = [];
         let totalPedido = 0;
         
-        // Log de diagnóstico: ver exactamente qué líneas se van a procesar
-        console.log(`  📊 seccionPedido (primeros 300 chars): "${seccionPedido.substring(0,300)}"`);
-        console.log(`  📊 Total líneas a procesar: ${lineas.length}`);
-        lineas.forEach((l, i) => console.log(`  📊 Línea[${i}]: "${l}"`));
-        
         for (const linea of lineas) {
             // Patrón flexible — captura cualquier formato:
             // "- 3 Taco de asada"  "• 2 Quesadilla"  "3x Taco"  "3 Taco de asada"
@@ -924,14 +922,8 @@ async function crearOrdenEnLoyverse(pedidoTexto, nombreCliente, numeroCliente, v
             customer_id: clienteId
         };
         
-        console.log('──────────────────────────────────────');
-        console.log('📤 PAYLOAD ENVIADO A LOYVERSE:');
-        console.log(JSON.stringify(ordenData, null, 2));
-        console.log('──────────────────────────────────────');
+        console.log(`[Loyverse] Enviando orden: ${lineItems.length} item(s), tipo=${diningOption}`);
         const resultado = await loyverseRequest('POST', '/v1.0/receipts', ordenData);
-        
-        console.log('📥 RESPUESTA DE LOYVERSE:');
-        console.log(JSON.stringify(resultado, null, 2));
         
         // Verificar si los modifiers fueron aceptados en la respuesta
         if (resultado.line_items) {
